@@ -1,3 +1,5 @@
 .vscode/
 **/target/
+**/debug/
 **/Cargo.lock
+**/.rustc_info.json
