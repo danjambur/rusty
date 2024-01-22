@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "./guessing_game",
+    "./loops",
+    "./named_loops",
+    "./overflow-handling",
+    "./shadowing",
+    "./array_loops"
+]
+
