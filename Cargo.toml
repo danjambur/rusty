@@ -8,6 +8,7 @@ members = [
     "./shadowing",
     "./array_loops",
     "./ownership",
-    "./return_ownership"
+    "./return_ownership",
+    "./structs"
 ]
 
