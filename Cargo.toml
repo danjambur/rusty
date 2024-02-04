@@ -1,10 +1,13 @@
 [workspace]
+resolver = "2"
 members = [
     "./guessing_game",
     "./loops",
     "./named_loops",
     "./overflow-handling",
     "./shadowing",
-    "./array_loops"
+    "./array_loops",
+    "./ownership",
+    "./return_ownership"
 ]
 
