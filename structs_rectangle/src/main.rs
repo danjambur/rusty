@@ -10,6 +10,10 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
+    fn width(&self) -> bool {
+        self.width > 0
+    }
 }
 
 fn main() {
@@ -23,6 +27,10 @@ fn main() {
         // we pass a referrence to area, not the variable.
         rect1.area()
     );
+
+    if rect1.width() {
+        println!("the width is: {}", rect1.width);
+    }
 
     println!("rect is: {:?}", rect1)
 }
