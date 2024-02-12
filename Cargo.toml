@@ -9,6 +9,7 @@ members = [
     "./array_loops",
     "./ownership",
     "./return_ownership",
-    "./structs"
+    "./structs",
+    "./structs_rectangle"
 ]
 

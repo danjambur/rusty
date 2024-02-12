@@ -1,4 +1,5 @@
-// a struct is a 'structure'.. just like an object
+// a struct is a 'structure'.. just like an object!
+// Debug allows us to print using {:?}
 #[derive(Debug)]
 struct User {
     active: bool,
@@ -17,7 +18,7 @@ fn build_user(email: String, username: String) -> User {
     }
 }
 fn main() {
-    let user1 = build_user(
+    let user1: User = build_user(
         String::from("someone@example.com"),
         String::from("danjambur"),
     );
