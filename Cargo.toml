@@ -13,5 +13,6 @@ members = [
     "./structs_rectangle",
     "./enums",
     "./enums_messages",
+    "./enums_option"
 ]
 
