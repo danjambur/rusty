@@ -10,6 +10,8 @@ members = [
     "./ownership",
     "./return_ownership",
     "./structs",
-    "./structs_rectangle"
+    "./structs_rectangle",
+    "./enums",
+    "./enums_messages",
 ]
 
