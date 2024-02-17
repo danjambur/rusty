@@ -14,6 +14,20 @@ impl Rectangle {
     fn width(&self) -> bool {
         self.width > 0
     }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+
+    // square returns `Self` - it is an associated function that most languages would use with new
+    // the `Self` keywords are aliases for the targeted 'impl' block. In this case it refers to rectangle.
+    // This could also be implemented as 'Rectangle'.
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
 }
 
 fn main() {
@@ -22,6 +36,16 @@ fn main() {
         width: 30,
         height: 50,
     };
+
+    let rect2 = Rectangle {
+        width: 20,
+        height: 30,
+    };
+
+    let rect3 = Rectangle::square(200);
+
+    println!("squared {:?}", rect3);
+
     println!(
         "the area of the rectangle is {} square pixels.",
         // we pass a referrence to area, not the variable.
@@ -31,6 +55,8 @@ fn main() {
     if rect1.width() {
         println!("the width is: {}", rect1.width);
     }
+
+    println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
 
     println!("rect is: {:?}", rect1)
 }
