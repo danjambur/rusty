@@ -14,6 +14,6 @@ members = [
     "./enums",
     "./enums_messages",
     "./enums_option",
-    "./enums_coin_match_exp"
+    "./enums_match_exp"
 ]
 
