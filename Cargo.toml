@@ -16,5 +16,5 @@ members = [
     "./enums_option",
     "./enums_match_exp",
     "vectors"
-    ]
+    , "hashmaps"]
 
