@@ -4,6 +4,7 @@ struct Point<T, U> {
     y: U,
 }
 
+// Simple implementation of methods for returning the value of the 'Point' that it is called against
 impl<T, U> Point<T, U> {
     fn x(&self) -> &T {
         &self.x
@@ -11,6 +12,14 @@ impl<T, U> Point<T, U> {
 
     fn y(&self) -> &U {
         &self.y
+    }
+}
+
+// An example of a method that allows for a method to only be accessible on a Point with a CONCRETE
+// Type of f32 for example.
+impl Point<f64, f64> {
+    fn distance_from_origin(&self) -> f64 {
+        (self.x.powi(2) + self.y.powi(2)).sqrt()
     }
 }
 
@@ -24,6 +33,9 @@ fn main() {
     println!("{:?}", integer_and_float);
 
     let p = Point { x: 6, y: 453.4 };
+    println!("p.x = {}, py.= {}", p.x(), p.y());
 
-    println!("p.x = {}, py.= {}", p.x(), p.y())
+    let point_f32_origin = Point { x: 1.2, y: 1.3 };
+
+    println!("origin = {}", point_f32_origin.distance_from_origin())
 }
