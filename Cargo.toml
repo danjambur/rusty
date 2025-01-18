@@ -17,6 +17,7 @@ members = [
     "./enums_match_exp",
     "vectors",
     "hashmaps",
-    "error_handling"
-    ]
+    "error_handling",
+    "generic_function_extraction"
+, "generic_structs"]
 
