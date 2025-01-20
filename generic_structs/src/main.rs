@@ -16,7 +16,7 @@ impl<T, U> Point<T, U> {
 }
 
 // An example of a method that allows for a method to only be accessible on a Point with a CONCRETE
-// Type of f32 for example.
+// Type of f64 for example.
 impl Point<f64, f64> {
     fn distance_from_origin(&self) -> f64 {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
