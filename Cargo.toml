@@ -20,6 +20,8 @@ members = [
     "error_handling",
     "generic_function_extraction",
     "generic_structs",
-    "traits_aggregator"
+    "traits_aggregator",
+    "generic_lifetimes",
+    "generic_type_trait_and_lifetimes"
 ]
 
