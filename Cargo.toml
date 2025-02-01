@@ -22,6 +22,7 @@ members = [
     "generic_structs",
     "traits_aggregator",
     "generic_lifetimes",
-    "generic_type_trait_and_lifetimes"
-]
+    "generic_type_trait_and_lifetimes",
+    "minigrep"
+ ]
 
