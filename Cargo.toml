@@ -18,6 +18,8 @@ members = [
     "vectors",
     "hashmaps",
     "error_handling",
-    "generic_function_extraction"
-, "generic_structs"]
+    "generic_function_extraction",
+    "generic_structs",
+    "traits_aggregator"
+]
 
