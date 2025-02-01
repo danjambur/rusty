@@ -1,5 +1,9 @@
 pub trait Summary {
-    fn summarise(&self) -> String;
+    // without a default, this could be written as;
+    // fn summarise(&self) -> String;
+    fn summarise(&self) -> String {
+        String::from("(Read more...)")
+    }
 }
 
 pub struct NewsArticle {
@@ -10,9 +14,10 @@ pub struct NewsArticle {
 }
 
 impl Summary for NewsArticle {
-    fn summarise(&self) -> String {
-        format!("{}, by {} ({})", self.headline, self.author, self.location)
-    }
+    // Uncomment this, to overwrite the default!
+    // fn summarise(&self) -> String {
+    //     format!("{}, by {} ({})", self.headline, self.author, self.location)
+    // }
 }
 
 pub struct Tweet {
