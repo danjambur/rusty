@@ -23,6 +23,7 @@ members = [
     "traits_aggregator",
     "generic_lifetimes",
     "generic_type_trait_and_lifetimes",
-    "minigrep"
- ]
+    "minigrep",
+    "custom_smart_pointer_drop"
+]
 
